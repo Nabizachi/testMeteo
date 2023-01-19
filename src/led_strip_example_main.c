@@ -108,13 +108,13 @@ void app_main(void)
     };
     while (1)
     {
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < 14; i++)
         {
-            for (int j = i; j < EXAMPLE_LED_NUMBERS; j += 3)
+            for (int j = i; j < EXAMPLE_LED_NUMBERS; j += 1)
             {
                 // Build RGB pixels
-                hue = j * 360 / EXAMPLE_LED_NUMBERS + start_rgb;
-                led_strip_hsv2rgb(hue, 100, 100, &red, &green, &blue);
+                hue = j * 360 / EXAMPLE_LED_NUMBERS;
+                led_strip_hsv2rgb(100, 100, 1, &red, &green, &blue);
                 led_strip_pixels[j * 3 + 0] = green;
                 led_strip_pixels[j * 3 + 1] = blue;
                 led_strip_pixels[j * 3 + 2] = red;
@@ -126,6 +126,5 @@ void app_main(void)
             ESP_ERROR_CHECK(rmt_transmit(led_chan, led_encoder, led_strip_pixels, sizeof(led_strip_pixels), &tx_config));
             vTaskDelay(pdMS_TO_TICKS(EXAMPLE_CHASE_SPEED_MS));
         }
-        start_rgb += 60;
     }
 }
