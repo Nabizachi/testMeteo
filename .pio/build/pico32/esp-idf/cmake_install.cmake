@@ -389,21 +389,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Projects/testMeteo/.pio/build/pico32/esp-idf/lib8tion/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("C:/Projects/testMeteo/.pio/build/pico32/esp-idf/color/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("C:/Projects/testMeteo/.pio/build/pico32/esp-idf/esp_idf_lib_helpers/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("C:/Projects/testMeteo/.pio/build/pico32/esp-idf/led_strip/cmake_install.cmake")
+  include("C:/Projects/testMeteo/.pio/build/pico32/esp-idf/src/cmake_install.cmake")
 endif()
 

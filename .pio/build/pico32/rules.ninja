@@ -1341,7 +1341,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_wifi_provisioning
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER____idf_lib8tion
+rule C_COMPILER____idf_src
   depfile = $DEP_FILE
   deps = gcc
   command = C:\Users\Bobrov_GV\.platformio\packages\toolchain-xtensa-esp32\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out   -c $in
@@ -1351,45 +1351,7 @@ rule C_COMPILER____idf_lib8tion
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER____idf_lib8tion
-  command = cmd.exe /C "$PRE_LINK && C:\Users\Bobrov_GV\.platformio\packages\tool-cmake\bin\cmake.exe -E remove $TARGET_FILE && C:\Users\Bobrov_GV\.platformio\packages\toolchain-xtensa-esp32\bin\xtensa-esp32-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && C:\Users\Bobrov_GV\.platformio\packages\toolchain-xtensa-esp32\bin\xtensa-esp32-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
-  description = Linking C static library $TARGET_FILE
-  restat = $RESTAT
-
-
-#############################################
-# Rule for compiling C files.
-
-rule C_COMPILER____idf_color
-  depfile = $DEP_FILE
-  deps = gcc
-  command = C:\Users\Bobrov_GV\.platformio\packages\toolchain-xtensa-esp32\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out   -c $in
-  description = Building C object $out
-
-
-#############################################
-# Rule for linking C static library.
-
-rule C_STATIC_LIBRARY_LINKER____idf_color
-  command = cmd.exe /C "$PRE_LINK && C:\Users\Bobrov_GV\.platformio\packages\tool-cmake\bin\cmake.exe -E remove $TARGET_FILE && C:\Users\Bobrov_GV\.platformio\packages\toolchain-xtensa-esp32\bin\xtensa-esp32-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && C:\Users\Bobrov_GV\.platformio\packages\toolchain-xtensa-esp32\bin\xtensa-esp32-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
-  description = Linking C static library $TARGET_FILE
-  restat = $RESTAT
-
-
-#############################################
-# Rule for compiling C files.
-
-rule C_COMPILER____idf_led_strip
-  depfile = $DEP_FILE
-  deps = gcc
-  command = C:\Users\Bobrov_GV\.platformio\packages\toolchain-xtensa-esp32\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out   -c $in
-  description = Building C object $out
-
-
-#############################################
-# Rule for linking C static library.
-
-rule C_STATIC_LIBRARY_LINKER____idf_led_strip
+rule C_STATIC_LIBRARY_LINKER____idf_src
   command = cmd.exe /C "$PRE_LINK && C:\Users\Bobrov_GV\.platformio\packages\tool-cmake\bin\cmake.exe -E remove $TARGET_FILE && C:\Users\Bobrov_GV\.platformio\packages\toolchain-xtensa-esp32\bin\xtensa-esp32-elf-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && C:\Users\Bobrov_GV\.platformio\packages\toolchain-xtensa-esp32\bin\xtensa-esp32-elf-ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT

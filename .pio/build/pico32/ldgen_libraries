@@ -59,6 +59,4 @@ C:/Projects/testMeteo/.pio/build/pico32/esp-idf/perfmon/libperfmon.a
 C:/Projects/testMeteo/.pio/build/pico32/esp-idf/spiffs/libspiffs.a
 C:/Projects/testMeteo/.pio/build/pico32/esp-idf/ulp/libulp.a
 C:/Projects/testMeteo/.pio/build/pico32/esp-idf/wifi_provisioning/libwifi_provisioning.a
-C:/Projects/testMeteo/.pio/build/pico32/esp-idf/lib8tion/liblib8tion.a
-C:/Projects/testMeteo/.pio/build/pico32/esp-idf/color/libcolor.a
-C:/Projects/testMeteo/.pio/build/pico32/esp-idf/led_strip/libled_strip.a
+C:/Projects/testMeteo/.pio/build/pico32/esp-idf/src/libsrc.a

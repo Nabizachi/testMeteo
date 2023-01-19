@@ -47,4 +47,3 @@ source "C:/Users/Bobrov_GV/.platformio/packages/framework-espidf/components/vfs/
 source "C:/Users/Bobrov_GV/.platformio/packages/framework-espidf/components/wear_levelling/Kconfig"
 source "C:/Users/Bobrov_GV/.platformio/packages/framework-espidf/components/wifi_provisioning/Kconfig"
 source "C:/Users/Bobrov_GV/.platformio/packages/framework-espidf/components/wpa_supplicant/Kconfig"
-source "C:/Projects/testMeteo/components/led_strip/Kconfig"

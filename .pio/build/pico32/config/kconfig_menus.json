@@ -21871,34 +21871,6 @@
                 "id": "component-config-supplicant",
                 "title": "Supplicant",
                 "type": "menu"
-            },
-            {
-                "children": [
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": null,
-                        "id": "LED_STRIP_FLUSH_TIMEOUT",
-                        "name": "LED_STRIP_FLUSH_TIMEOUT",
-                        "range": null,
-                        "title": "Strip flush timeout, ms",
-                        "type": "int"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "This delay is between the sending full data to the all LEDs in strip.\nWithout this delay, a bug with \"missing\" pixels is possible: \nif delay between calls to led_strip_flush() is small, the LEDs consider\nthe new data package sent to all LEDs in strip to be a continuation of\nthe previous one.",
-                        "id": "LED_STRIP_PAUSE_LENGTH",
-                        "name": "LED_STRIP_PAUSE_LENGTH",
-                        "range": null,
-                        "title": "Delay between flushes, us",
-                        "type": "int"
-                    }
-                ],
-                "depends_on": null,
-                "id": "component-config-led-strip",
-                "title": "LED strip",
-                "type": "menu"
             }
         ],
         "depends_on": null,

@@ -284,7 +284,7 @@ ENABLE_PROGRAMS:BOOL=
 ENABLE_TESTING:BOOL=
 
 //No help, variable specified on the command line.
-EXTRA_COMPONENT_DIRS:PATH=C:/Projects/testMeteo/src
+EXTRA_COMPONENT_DIRS:PATH=c:/Projects/testMeteo/src
 
 //Generate the auto-generated files as needed
 GEN_FILES:BOOL=
@@ -317,7 +317,7 @@ PYTHON:UNINITIALIZED=C:\Users\Bobrov_GV\.platformio\penv\Scripts\python.exe
 PYTHON_DEPS_CHECKED:UNINITIALIZED=1
 
 //No help, variable specified on the command line.
-SDKCONFIG:UNINITIALIZED=C:\Projects\testMeteo\sdkconfig.pico32
+SDKCONFIG:UNINITIALIZED=c:\Projects\testMeteo\sdkconfig.pico32
 
 //Allow unsafe builds. These builds ARE NOT SECURE.
 UNSAFE_BUILD:BOOL=OFF
@@ -499,7 +499,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=86
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=83
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
