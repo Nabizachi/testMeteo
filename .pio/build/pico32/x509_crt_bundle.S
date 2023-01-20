@@ -1,4 +1,4 @@
-/* * Data converted from C:\Projects\testMeteo\.pio\build\pico32\x509_crt_bundle
+/* * Data converted from c:\Projects\testMeteo\.pio\build\pico32\x509_crt_bundle
  */
 .data
 .section .rodata.embedded

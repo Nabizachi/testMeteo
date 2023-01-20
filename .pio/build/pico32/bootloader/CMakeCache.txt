@@ -251,7 +251,7 @@ PYTHON:UNINITIALIZED=C:\Users\Bobrov_GV\.platformio\penv\Scripts\python.exe
 PYTHON_DEPS_CHECKED:UNINITIALIZED=1
 
 //No help, variable specified on the command line.
-SDKCONFIG:UNINITIALIZED=C:\Projects\testMeteo\sdkconfig.pico32
+SDKCONFIG:UNINITIALIZED=c:\Projects\testMeteo\sdkconfig.pico32
 
 //Value Computed by CMake
 bootloader_BINARY_DIR:STATIC=C:/Projects/testMeteo/.pio/build/pico32/bootloader
