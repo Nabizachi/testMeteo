@@ -15,7 +15,7 @@ int gpioNum;
 
 void led_strip_hsv2rgb(uint32_t h, uint32_t s, uint32_t v, uint32_t *r, uint32_t *g, uint32_t *b);
 void stripLedBegin(int gpioNum);
-static uint8_t setPixelColorRGB(int number, uint8_t Red, uint8_t Blue, uint8_t Green, int brightness);
-static uint8_t setPixelColorHSV(int number, uint16_t color, uint32_t brightness);
+uint8_t setPixelColorRGB(int number, uint8_t Red, uint8_t Blue, uint8_t Green, int brightness);
+uint8_t setPixelColorHSV(int number, uint16_t color, uint32_t brightness);
 
 #endif
