@@ -2,7 +2,7 @@
 
 void startLed()
 {
-    stripLedBegin(26);
+    stripLedBegin();
 }
 
 void app_main()

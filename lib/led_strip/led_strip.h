@@ -10,11 +10,10 @@
 
 #define EXAMPLE_LED_NUMBERS 14
 #define EXAMPLE_CHASE_SPEED_MS 5000
-
-int gpioNum;
+#define LED_GPIO_NUM 26
 
 void led_strip_hsv2rgb(uint32_t h, uint32_t s, uint32_t v, uint32_t *r, uint32_t *g, uint32_t *b);
-void stripLedBegin(int gpioNum);
+void stripLedBegin();
 uint8_t setPixelColorRGB(int number, uint8_t Red, uint8_t Blue, uint8_t Green, int brightness);
 uint8_t setPixelColorHSV(int number, uint16_t color, uint32_t brightness);
 
