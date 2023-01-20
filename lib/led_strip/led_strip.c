@@ -10,7 +10,7 @@
 #include "led_strip.h"
 
 static const char *TAG = "example";
-static uint8_t led_strip_pixels[EXAMPLE_LED_NUMBERS * 3];
+uint8_t led_strip_pixels[EXAMPLE_LED_NUMBERS * 3];
 rmt_channel_handle_t led_chan = NULL;
 rmt_encoder_handle_t led_encoder = NULL;
 rmt_transmit_config_t tx_config = {
@@ -85,7 +85,7 @@ void stripLedBegin(int gpioNum)
     ESP_LOGI(TAG, "Start LED rainbow chase");
 }
 
-static uint8_t setPixelColorRGB(int number, uint8_t Red, uint8_t Blue, uint8_t Green, int brightness)
+uint8_t setPixelColorRGB(int number, uint8_t Red, uint8_t Blue, uint8_t Green, int brightness)
 {
     led_strip_pixels[number * 3 + 0] = Blue * brightness / 100;
     led_strip_pixels[number * 3 + 1] = Red * brightness / 100;
@@ -93,7 +93,7 @@ static uint8_t setPixelColorRGB(int number, uint8_t Red, uint8_t Blue, uint8_t G
     return rmt_transmit(led_chan, led_encoder, led_strip_pixels, sizeof(led_strip_pixels), &tx_config);
 }
 
-static uint8_t setPixelColorHSV(int number, uint16_t color, uint32_t brightness)
+uint8_t setPixelColorHSV(int number, uint16_t color, uint32_t brightness)
 {
     uint32_t red = 0;
     uint32_t green = 0;
