@@ -1,6 +1,14 @@
 {
     "files.associations": {
         "led_strip_encoder.h": "c",
-        "led_strip.h": "c"
+        "led_strip.h": "c",
+        "rmt_tx.h": "c",
+        "rmt_common.h": "c",
+        "rmt_encoder.h": "c",
+        "rmt_types.h": "c",
+        "esp_err.h": "c",
+        "assert.h": "c",
+        "string.h": "c",
+        "task.h": "c"
     }
 }
