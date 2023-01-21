@@ -1,3 +1,4 @@
+#include "stdio.h"
 #include "led_strip.h"
 
 void startLed()
@@ -18,7 +19,6 @@ void app_main()
     setPixelColorRGB(7, 255, 0, 0, 1);
     setPixelColorRGB(8, 0, 255, 0, 1);
     setPixelColorRGB(9, 0, 0, 255, 1);
-
     vTaskDelay(pdMS_TO_TICKS(EXAMPLE_CHASE_SPEED_MS));
     // memset(led_strip_pixels, 0, sizeof(led_strip_pixels));
     // vTaskDelay(pdMS_TO_TICKS(EXAMPLE_CHASE_SPEED_MS));
